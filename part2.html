@@ -7,11 +7,11 @@
     <title>HTML Components - Part 2</title>
   </head>
   <body>
-    <a href="index.html">Home</a>
-    <br />
-    <a href="part1.html">HTML Components Practice - Part 1</a>
-    <br />
-    <a href="part2.html">HTML Components Practice - Part 2</a>
+    <ul>
+      <a href="index.html"><li>Home</li></a>
+      <a href="part1.html"><li>HTML Components Practice - Part 1</li></a>
+      <a href="part2.html"><li>HTML Components Practice - Part 2</li></a>
+    </ul>
     <h1>HTML Components Practice - Part 2</h1>
     <h2>My Travels</h2>
     <p>The table below summarizes my travels:</p>
@@ -62,6 +62,8 @@
 
     <h3>Interactive Map of Where I Have Travelled</h3>
     <iframe
+      title="An IFrame Showing A Map of Countries I Have Travelled to using
+        amCharts.com"
       src="https://www.amcharts.com/visited_countries/#FR,GB,CA,US,EG,IL,JO"
       width="960px"
       height="720px"
@@ -80,11 +82,11 @@
 
     <h3>A List of My Quintessential Travel Items:</h3>
     <dl>
-      <dt>A refillable water bottle</dt>
+      <dt>A Refillable Water Bottle</dt>
       <dd>Saves time, money, and the environment!</dd>
-      <dt>A brimmed hat</dt>
+      <dt>A Brimmed Hat</dt>
       <dd>Saves you from sun damage and lowers risk of heatstroke.</dd>
-      <dt>A smartphone</dt>
+      <dt>A Smartphone</dt>
       <dd>For directions, Internet searches, and entertainment!</dd>
     </dl>
 
@@ -93,11 +95,88 @@
       Complete the form below to suggest a travel destination for me to
       consider!
     </p>
-    <form>
+    <form method="get">
       <label for="country">
         Please enter the name of the country you are suggesting:
       </label>
       <input name="country" type="text" id="country" required />
+      <br />
+      <br />
+      <fieldset>
+        <legend>
+          What Items Would You Recommend I Bring to the Country You Are
+          Suggesting:
+        </legend>
+        <input
+          type="checkbox"
+          name="water-bottle"
+          id="water-bottle"
+          value="water"
+        />
+        <label for="water-bottle">Refillable Water Bottle</label>
+        <br />
+
+        <input type="checkbox" name="hat" id="hat" value="hat" />
+        <label for="hat">A Hat</label>
+        <br />
+
+        <input type="checkbox" name="backpack" id="backpack" value="backpack" />
+        <label for="hat">A Backpack</label>
+        <br />
+        <br />
+        <label for="other">I Have a Different Suggestion:</label>
+        <input type="text" name="other-suggestion" id="other" />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Your Contact Info (In Case I Have Follow-up Questions):</legend>
+        <label for="contact-name">
+          Your Full Name (ex. Jim Smith) [required]:
+        </label>
+        <input type="text" name="contact-name" id="contact-name" required />
+        <br />
+        <br />
+        <label for="contact-email">
+          Your Email Address (ex. jimsmith@gmail.com) [required]:
+        </label>
+        <input type="email" name="contact-email" id="contact-email" />
+        <br />
+        <br />
+        <label for="contact-telephone">
+          Your Telephone Number (ex. 1 (555) 555-5555):
+        </label>
+        <input type="tel" name="contact-telephone" id="contact-telephone" />
+        <br />
+        <br />
+        <label for="country-info-ask">
+          If You Want More Information About a Place I Have Travelled To, Please
+          Select it from the Dropdown Menu Below:
+        </label>
+        <select id="country-info-ask" name="country-info-ask">
+          <option name="none">I Do Not Require Any Information</option>
+
+          <optgroup label="North America">
+            <option name="canada">Canada</option>
+            <option name="usa">USA</option>
+          </optgroup>
+
+          <optgroup label="Europe">
+            <option name="england">England</option>
+            <option name="france">France</option>
+          </optgroup>
+
+          <optgroup label="Africa">
+            <option name="egypt">Egypt</option>
+          </optgroup>
+
+          <optgroup label="Asia">
+            <option name="jordan">Jordan</option>
+            <option name="israel">Israel</option>
+          </optgroup>
+        </select>
+      </fieldset>
+      <br />
+      <input type="submit" name="submit-form" value="Submit Your Suggestion" />
     </form>
   </body>
 </html>
