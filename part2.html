@@ -95,14 +95,14 @@
       Complete the form below to suggest a travel destination for me to
       consider!
     </p>
-    <form method="get">
+    <form name="user-travel-suggestion" id="travel-suggestion" method="get">
       <label for="country">
-        Please enter the name of the country you are suggesting:
+        Please Enter the Name of the Country You Are Suggesting:
       </label>
       <input name="country" type="text" id="country" required />
       <br />
       <br />
-      <fieldset>
+      <fieldset form="travel-suggestion" name="">
         <legend>
           What Items Would You Recommend I Bring to the Country You Are
           Suggesting:
@@ -121,7 +121,7 @@
         <br />
 
         <input type="checkbox" name="backpack" id="backpack" value="backpack" />
-        <label for="hat">A Backpack</label>
+        <label for="backpack">A Backpack</label>
         <br />
         <br />
         <label for="other">I Have a Different Suggestion:</label>
@@ -143,7 +143,7 @@
         <br />
         <br />
         <label for="contact-telephone">
-          Your Telephone Number (ex. 1 (555) 555-5555):
+          Your Telephone Number (ex. 1-555-555-5555):
         </label>
         <input type="tel" name="contact-telephone" id="contact-telephone" />
         <br />
