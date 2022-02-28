@@ -97,16 +97,18 @@
     </p>
     <form name="user-travel-suggestion" id="travel-suggestion" method="get">
       <label for="country">
-        Please Enter the Name of the Country You Are Suggesting:
+        Please Enter the Name of the Country You Are Suggesting (required):
       </label>
       <input name="country" type="text" id="country" required />
       <br />
       <br />
+
       <fieldset form="travel-suggestion" name="travel-items">
         <legend>
           What Items Would You Recommend I Bring to the Country You Are
           Suggesting:
         </legend>
+
         <input
           type="checkbox"
           name="water-bottle"
@@ -124,36 +126,45 @@
         <label for="backpack">A Backpack</label>
         <br />
         <br />
+
         <label for="other">I Have a Different Suggestion:</label>
         <input type="text" name="other-suggestion" id="other" />
       </fieldset>
       <br />
+
       <fieldset form="travel-suggestion" name="user-contact-info">
         <legend>Your Contact Info (In Case I Have Follow-up Questions):</legend>
+
         <label for="contact-name">
           Your Full Name (ex. Jim Smith) [required]:
         </label>
         <input type="text" name="contact-name" id="contact-name" required />
         <br />
         <br />
+
         <label for="contact-email">
           Your Email Address (ex. jimsmith@gmail.com) [required]:
         </label>
         <input type="email" name="contact-email" id="contact-email" />
         <br />
         <br />
+
         <label for="contact-telephone">
           Your Telephone Number (ex. 1-555-555-5555):
         </label>
         <input type="tel" name="contact-telephone" id="contact-telephone" />
         <br />
         <br />
+
         <label for="country-info-ask">
           If You Want More Information About a Place I Have Travelled To, Please
           Select it from the Dropdown Menu Below:
         </label>
+
         <select id="country-info-ask" name="country-info-ask">
-          <option value="none">I Do Not Require Any Information</option>
+          <option value="none" selected>
+            I Do Not Require Any Information
+          </option>
 
           <optgroup label="North America">
             <option value="canada">Canada</option>
@@ -176,6 +187,7 @@
         </select>
       </fieldset>
       <br />
+
       <input type="submit" name="submit-form" value="Submit Your Suggestion" />
     </form>
   </body>
