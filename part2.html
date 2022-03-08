@@ -95,7 +95,14 @@
       Complete the form below to suggest a travel destination for me to
       consider!
     </p>
+
+    <!-- 
+      This form will ask a user to suggest a country for me to travel to.
+     -->
     <form name="user-travel-suggestion" id="travel-suggestion" method="get">
+      <!-- 
+        This text input asks a user to enter the name of a country they suggest I travel to.
+       -->
       <label for="country">
         Please Enter the Name of the Country You Are Suggesting (required):
       </label>
@@ -103,12 +110,21 @@
       <br />
       <br />
 
+      <!-- 
+        This fieldset will contain options for items that the user
+        can suggest I bring to the country they suggest.
+       -->
       <fieldset form="travel-suggestion" name="travel-items">
         <legend>
           What Items Would You Recommend I Bring to the Country You Are
           Suggesting:
         </legend>
 
+        <!-- 
+          This is the checkbox that users can select if they 
+          recommend that I take a water bottle to the country they
+          suggest.
+         -->
         <input
           type="checkbox"
           name="water-bottle"
@@ -118,23 +134,45 @@
         <label for="water-bottle">Refillable Water Bottle</label>
         <br />
 
+        <!-- 
+          This is the checkbox that users can select if they 
+          recommend that I take a hat to the country they
+          suggest.
+         -->
         <input type="checkbox" name="hat" id="hat" value="hat" />
         <label for="hat">A Hat</label>
         <br />
 
+        <!-- 
+          This is the checkbox that users can select if they 
+          recommend that I take a backback to the country they
+          suggest.
+         -->
         <input type="checkbox" name="backpack" id="backpack" value="backpack" />
         <label for="backpack">A Backpack</label>
         <br />
         <br />
 
+        <!-- 
+          If the user suggests another item that I do not have in
+          my list, they can use this textbox to suggest another item.
+         -->
         <label for="other">I Have a Different Suggestion:</label>
         <input type="text" name="other-suggestion" id="other" />
       </fieldset>
       <br />
 
+      <!-- 
+        This fieldset asks for the user's contact information in
+        case I need to follow up with the suggestion they provide
+        to me for a country to travel to.
+       -->
       <fieldset form="travel-suggestion" name="user-contact-info">
         <legend>Your Contact Info (In Case I Have Follow-up Questions):</legend>
 
+        <!-- 
+          This text input asks for the user's full name (first and last name).
+         -->
         <label for="contact-name">
           Your Full Name (ex. Jim Smith) [required]:
         </label>
@@ -142,6 +180,9 @@
         <br />
         <br />
 
+        <!-- 
+          This text input asks for the user's email address.
+         -->
         <label for="contact-email">
           Your Email Address (ex. jimsmith@gmail.com) [required]:
         </label>
@@ -149,6 +190,9 @@
         <br />
         <br />
 
+        <!-- 
+          This text input asks for the user's telephone number.
+         -->
         <label for="contact-telephone">
           Your Telephone Number (ex. 1-555-555-5555):
         </label>
@@ -156,6 +200,10 @@
         <br />
         <br />
 
+        <!-- 
+          This dropdown select input asks the user if they would like information
+          about any countries I have travelled to in the past.
+         -->
         <label for="country-info-ask">
           If You Want More Information About a Place I Have Travelled To, Please
           Select it from the Dropdown Menu Below:
@@ -166,6 +214,7 @@
             I Do Not Require Any Information
           </option>
 
+          <!-- The options in the dropdown select input are grouped by continent. -->
           <optgroup label="North America">
             <option value="canada">Canada</option>
             <option value="usa">USA</option>
@@ -188,6 +237,10 @@
       </fieldset>
       <br />
 
+      <!-- 
+        This is the Submit button for my form so that the user
+        can send me their travel suggestion.
+       -->
       <input type="submit" name="submit-form" value="Submit Your Suggestion" />
     </form>
   </body>
