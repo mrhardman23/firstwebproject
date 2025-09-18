@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Website - Form</title>
+</head>
+<body>
+    <h1>My First Website</h1>
+
+    <h2>A Website to Practice HTML</h2>
+
+    <h3>HTML Forms</h3>
+
+    <p>
+      NOTE: This is a school project. DO NOT put any private information
+      in this form!
+    </p>
+
+    <!--
+      The form tag creates an area for user input.
+
+      Necessary attributes include:
+        method, which defines how data that is put into the form
+        is handled.
+          There are two possible values:
+            get, which displays all input at the end of the web address.
+            (NOTE: NOT GOOD FOR PRIVATE INFORMATION!!!)
+            post, which handles all input by sending it to a back-end
+            program.
+    -->
+    <form method="get">
+      <!--
+        The input tag creates the actual element that users will
+        type their information into.
+
+        Necessary attributes include:
+          type, which states what type of input it is
+            Examples: text, tel, password, email, button, checkbox, etc.
+          id, which gives the input an identifying name different from
+          other inputs.
+          name, which gives a variable for how to store this information
+          in the search bar or on the back-end.
+      -->
+      <input type="text" id="first-name" name="fName" required />
+    </form>
+</body>
+</html>
