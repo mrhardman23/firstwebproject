@@ -23,11 +23,31 @@
       displays in the tab at the top
       of the web browser.
     -->
-    <title>My First Website - Home Page</title>
+    <title>First Website - Home</title>
   </head>
 
   <!-- The body holds all the content that displays on the webpage. -->
   <body>
+
+    <!--
+      This is the best practice for setting up navigation in your website.
+      Use a <ul> with as many <li> tags as you need. 
+      Inside each <li>, put an <a> tag.
+      The href for each <a> tag is just the name of the other files in
+      your project.
+    -->
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="images-and-iframes.html">Images & IFrames</a>
+      </li>
+      <li>
+        <a href="lists-and-tables.html">Lists & Tables</a>
+      </li>
+    </ul>
+    
     <!-- 
       h1 is the largest type of heading and is the main 
       heading for a website.
@@ -82,252 +102,5 @@
       full sentences of information on a web page.
     -->
     <p>Hello! My name is Mr. Hardman! This is my first website!</p>
-
-    <h3>HTML Visual Tags</h3>
-
-    <br />
-
-    <!-- 
-      The img tag displays images on a web page.
-      
-      Necessary attributes include:
-        src, which states where the image can be found.
-        alt, which gives descriptive text about the image itself.
-          The goal with alt is to give enough description for a
-          person with vision difficulties, but do not be overly
-          descriptive.
-      Useful attributes include:
-        width: Lets you set the horizontal size of the image.
-        height: Lets you set the vertical size of the image.
-    -->
-    <!-- 
-      Also, img is an example of an inline element because an img
-      only takes up as much space on the web page as it needs to
-      for displaying properly.
-    -->
-    <img src="images/ptec-logo.png" alt="A picture of the PTEC 
-      program's logo, a circle with a purple and black gradient
-      with the letters PTEC on top." width="300px" />
-
-    <!--
-      iframe tags let developers display content from other
-      websites in their own website.
-
-      Necessary attributes include:
-        src, which states the address of the web page the
-          developer wants to display in the iframe.
-        title, which describes the iframe's content to
-          people with vision difficulties. Same rules apply
-          to this attribute as img's alt attribute.
-      Important attributes include:
-        width: horizontal size of the iframe.
-        height: vertical size of the iframe.
-        
-      NOTE: If you do not want a border around your iframe,
-      use style="border: 0;"
-    -->
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14973.384370406018!2d57.47881105159153!3d-20.244476399449834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c5b1e4771db33%3A0x57602f8c1bc61566!2sEbene%2C%20Quatre%20Bornes%2C%20Mauritius!5e0!3m2!1sen!2sca!4v1758034990488!5m2!1sen!2sca" 
-      title="An iframe that displays the location of 
-        Ebene, Maritius in Google Maps."
-      width="400" 
-      height="300"
-      style="border: 0;"
-    >
-      Your browser does not support iframe content.
-    </iframe>
-
-    <!-- 
-      This is how a developer shows a YouTube video on their 
-      web pages.
-    -->
-    <iframe 
-      width="560" 
-      height="315" 
-      src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=6L9rYq0atYBHuOXb&amp;controls=0" 
-      title="A YouTube video displaying Rick Astley's 
-        Never Gonna Give You Up"
-      allow="fullscreen; accelerometer; autoplay; 
-        clipboard-write; encrypted-media; gyroscope; 
-        picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin" 
-    >
-      Your browser does not support iframe content.
-    </iframe>
-
-    <h3>HTML Lists & Tables</h3>
-
-    <!-- h4 is the third level of subheading. -->
-    <h4>Great NBA Players All Time</h4>
-
-    <!-- 
-      ul is for unordered (bullet-point) lists in a website.
-
-      Important attributes include:
-        type, which lets you choose what type of bullet is used
-        for your bullet points. Possible values include: disc,
-        circle, square.
-
-      NOTE: ul tags should be used for navigation bars on a
-        website.
-    -->
-    <ul type="square">
-      <!-- 
-        li tags are used for each list item inside an
-        unordered list or ordered list.
-      -->
-      <li>LeBron James</li>
-      <li>Steph Curry</li>
-      <li>Kobe Bryant</li>
-      <li>Michael Jordan</li>
-      <li>Steve Nash</li>
-      <li>Magic Johnson</li>
-      <li>Kareem Abdul-Jabbar</li>
-    </ul>
-
-    <h4>An Alphabetical List of Pembina Trails High Schools</h4>
-    <!--
-      The ol tag is for ordered lists, which can be numbered (1, 2, 3, ...),
-      lowercase alphabetical (a, b, c), uppercase Roman numeral (I, II, III, etc.),
-      and more.
-
-      Important attributes include:
-        type, which explains what type of symbol you are using for the ordering.
-          Possible values include: 1, a, A, i, I.
-    -->
-    <ol type="I">
-      <li>
-        <a href="https://www.pembinatrails.ca/fortrichmond" target="_blank">
-          Fort Richmond Collegiate
-        </a>
-      </li>
-      <li>
-        <!--
-          NOTE: This a tag has a special code inside it
-            called an entity. This helps us display special
-            characters on a website. E.g., &#201; displays É.
-
-          NOTE: The number codes are universally recognized by
-            browsers. There are also entity names like &Eacute;
-            which would also display É, but not all browsers
-            support these names.
-        -->
-        <a href="https://www.pembinatrails.ca/oakpark" target="_blank">
-          &#201;cole secondaire Oak Park High School
-        </a>
-      </li>
-      <li>
-        <a href="https://www.pembinatrails.ca/ptcollegiate" target="_blank">
-          Pembina Trails Collegiate
-        </a>
-      </li>
-      <li>
-        <a href="https://www.pembinatrails.ca/shaftesbury" target="_blank">
-          Shaftesbury High School
-        </a>
-      </li>
-      <li>
-        <!-- &#233 displays é. -->
-        <a href="https://www.pembinatrails.ca/vincentmassey" target="_blank">
-          Institut Colle&#233;gial Vincent Massey Collegiate
-        </a>
-      </li>
-    </ol>
-
-    <!-- 
-      dl tags are for definition lists. They let a developer
-      create a list of terms and descriptions for those terms.
-
-      May be used when defining important terms related to the
-      websites content or for things like online restaurant menus.
-    -->
-    <dl>
-      <!-- 
-        dt is short for definition term, which is the
-        term we will be describing in more detail.
-      -->
-      <dt>HTML</dt>
-
-      <!-- 
-        dd is short for definition description, which holds
-        the text we use to define the dt immediately before
-        this tag.
-      -->
-      <dd>
-        "Hypertext Markup Language (HTML) is the standard markup 
-        language for documents designed to be displayed in a web 
-        browser. It defines the content and structure of web 
-        content." - 
-        <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">
-          Wikipedia
-        </a>
-      </dd>
-
-      <dt>CSS</dt>
-      <dd>
-        "Cascading Style Sheets (CSS) is a style sheet language 
-        used for specifying the presentation and styling of a 
-        document written in a markup language such as HTML or 
-        XML (including XML dialects such as SVG, MathML or 
-        XHTML). CSS is a cornerstone technology of the World 
-        Wide Web, alongside HTML and JavaScript." - 
-        <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">
-          Wikipedia
-        </a>
-      </dd>
-
-      <dt>JavaScript</dt>
-      <dd>
-        "JavaScript (JS) is a programming language and core 
-        technology of the web platform, alongside HTML and 
-        CSS. Ninety-nine percent of websites on the World 
-        Wide Web use JavaScript on the client side for 
-        webpage behavior." - 
-        <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">
-          Wikipedia
-        </a>
-      </dd>
-    </dl>
-
-    <!-- 
-      The table tag creates a table of data, which helps
-      to organize info in rows and columns of related
-      information.
-
-      NOTE: Each row of a table needs a tr tag.
-      NOTE: The first tr should have as many th tags as you
-        need for the number of columns you want.
-      NOTE: Each following row should have the same number of
-        td tags as you had th tags in your first row.
-        For example, if you have five th tags in your first row,
-        you need five td tags in each tr tag that follows.
-    -->
-    <table>
-      <!-- tr defines a row of the table. -->
-      <tr>
-        <!-- th is for table headings. -->
-        <th>Course</th>
-        <th>Teacher</th>
-        <th>Time Slot</th>
-      </tr>
-      <tr>
-        <!-- 
-          td stands for table data, which is the information
-          you want to display in your table.
-        -->
-        <td>Math 10F</td>
-        <td>Mr. Suggit</td>
-        <td>10:50 am - 12:00 pm</td>
-      </tr>
-      <tr>
-        <td>PC Hardware 10S</td>
-        <td>Mr. Hardman</td>
-        <td>1:10 - 2:20 pm</td>
-      </tr>
-      <tr>
-        <td>Web Development I 10S</td>
-        <td>Mr. Hardman</td>
-        <td>2:20 - 3:30 pm</td>
-      </tr>
   </body>
 </html>

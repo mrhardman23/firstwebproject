@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Website - Images/IFrames</title>
+  </head>
+  <body>
+
+    <!--
+      This is the best practice for setting up navigation in your website.
+      Use a <ul> with as many <li> tags as you need. 
+      Inside each <li>, put an <a> tag.
+      The href for each <a> tag is just the name of the other files in
+      your project.
+    -->
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="images-and-iframes.html">Images & IFrames</a>
+      </li>
+      <li>
+        <a href="lists-and-tables.html">Lists & Tables</a>
+      </li>
+    </ul>
+
+    <h1>My First Website</h1>
+
+    <h2>A demo site to learn HTML</h2>
+
+    <h3>HTML Visual Tags</h3>
+
+    <br />
+
+    <!-- 
+      The img tag displays images on a web page.
+      
+      Necessary attributes include:
+        src, which states where the image can be found.
+        alt, which gives descriptive text about the image itself.
+          The goal with alt is to give enough description for a
+          person with vision difficulties, but do not be overly
+          descriptive.
+      Useful attributes include:
+        width: Lets you set the horizontal size of the image.
+        height: Lets you set the vertical size of the image.
+    -->
+    <!-- 
+      Also, img is an example of an inline element because an img
+      only takes up as much space on the web page as it needs to
+      for displaying properly.
+    -->
+    <img src="images/ptec-logo.png" alt="A picture of the PTEC 
+      program's logo, a circle with a purple and black gradient
+      with the letters PTEC on top." width="300px" />
+
+    <!--
+      iframe tags let developers display content from other
+      websites in their own website.
+
+      Necessary attributes include:
+        src, which states the address of the web page the
+          developer wants to display in the iframe.
+        title, which describes the iframe's content to
+          people with vision difficulties. Same rules apply
+          to this attribute as img's alt attribute.
+      Important attributes include:
+        width: horizontal size of the iframe.
+        height: vertical size of the iframe.
+        
+      NOTE: If you do not want a border around your iframe,
+      use style="border: 0;"
+    -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14973.384370406018!2d57.47881105159153!3d-20.244476399449834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c5b1e4771db33%3A0x57602f8c1bc61566!2sEbene%2C%20Quatre%20Bornes%2C%20Mauritius!5e0!3m2!1sen!2sca!4v1758034990488!5m2!1sen!2sca" 
+      title="An iframe that displays the location of 
+        Ebene, Maritius in Google Maps."
+      width="400" 
+      height="300"
+      style="border: 0;"
+    >
+      Your browser does not support iframe content.
+    </iframe>
+
+    <!-- 
+      This is how a developer shows a YouTube video on their 
+      web pages.
+    -->
+    <iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=6L9rYq0atYBHuOXb&amp;controls=0" 
+      title="A YouTube video displaying Rick Astley's 
+        Never Gonna Give You Up"
+      allow="fullscreen; accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; 
+        picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" 
+    >
+      Your browser does not support iframe content.
+    </iframe>
+  </body>
+</html>
