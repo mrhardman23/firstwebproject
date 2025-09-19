@@ -30,19 +30,40 @@
             program.
     -->
     <form method="get">
-      <!--
-        The input tag creates the actual element that users will
-        type their information into.
 
-        Necessary attributes include:
-          type, which states what type of input it is
-            Examples: text, tel, password, email, button, checkbox, etc.
-          id, which gives the input an identifying name different from
-          other inputs.
-          name, which gives a variable for how to store this information
-          in the search bar or on the back-end.
-      -->
-      <input type="text" id="first-name" name="fName" required />
+      <fieldset>
+        <legend>Contact Information</legend>
+
+        <!-- 
+          The label tag is used to explain what input is expected
+          from the input that immediately follows or is right before
+          the label.
+
+          Important attributes include:
+            for, which links to the ID of the input the label is for.
+        -->
+        <label for="first-name">First Name: </label>
+
+        <!--
+          The input tag creates the actual element that users will
+          type their information into.
+
+          Necessary attributes include:
+            type, which states what type of input it is
+              Examples: text, tel, password, email, button, checkbox, etc.
+            id, which gives the input an identifying name different from
+            other inputs.
+            name, which gives a variable for how to store this information
+            in the search bar or on the back-end.
+
+          Important attributes include:
+            required, which forces a user to have to enter input in the
+            input.
+        -->
+        <input type="text" id="first-name" name="fName" required />
+      </fieldset>
+
+      
     </form>
 </body>
 </html>
