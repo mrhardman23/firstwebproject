@@ -28,10 +28,23 @@
             (NOTE: NOT GOOD FOR PRIVATE INFORMATION!!!)
             post, which handles all input by sending it to a back-end
             program.
+        id, which gives the form an identifying name different from
+        other forms.
     -->
     <form id="contact-sign-up-interests" method="get">
 
+      <!-- 
+        The fieldset tag groups related elements in a form.
+
+        Necessary attributes include:
+          form, which links the fieldset to the ID of the form it
+          belongs to.
+      -->
       <fieldset form="contact-sign-up-interests">
+
+        <!-- 
+          The legend tag gives a title to the group of related inputs. 
+        -->
         <legend>Contact Information</legend>
 
         <!-- 
@@ -71,14 +84,17 @@
         <br />
         <br />
 
-        <label for="telephone">Phone Number: (Ex. 1-555-808-7878)</label>
+
+        <label for="telephone">Phone Number (ex. 1-555-808-7878):</label>
         <input type="tel" id="telephone" name="telNum" required />
       </fieldset>
+
+      <br />
 
       <fieldset form="contact-sign-up-interests">
         <legend>Sign Up</legend>
 
-        <label for="email-addr">Email Address: (Ex. user@domain.com)</label>
+        <label for="email-addr">Email Address (ex. user@domain.com):</label>
         <input type="email" id="email-addr" name="email" required />
 
         <br />
@@ -86,39 +102,162 @@
 
         <label for="password">Password: </label>
         <input type="password" id="password" name="pwd" required />
+
+        <br/>
+        <br />
+
+        <label for="skill-test">Skill Test, What is 4 x 8?</label>
+        <input type="number" id="skill-test" name="skill" required />
       </fieldset>
+
+      <br />
 
       <fieldset form="contact-sign-up-interests">
         <legend>User Interests</legend>
 
         <fieldset>
           <legend>Experience with Programming (in years):</legend>
-          <input type="radio" id="zero-to-one" name="prog-exp" value="0-1" />
+
+          <!--
+            For radio buttons, the name attribute must be the same
+            for all options in the same group. Otherwise, they will
+            not work properly.
+
+            The values must be different for each option so that
+            the data from the user can be properly taken in.
+          -->
+          <input type="radio" id="zero-to-one" name="prog-exp" value="0-1" required />
           <label for="zero-to-one">0-1</label>
-          <input type="radio" id="two-to-four" name="prog-exp" value="2-4" />
+
+          <br />
+
+          <input type="radio" id="two-to-four" name="prog-exp" value="2-4" required/>
           <label for="one">2-4</label>
-          <input type="radio" id="five-plus" name="prog-exp" value="5+" />
+
+          <br />
+
+          <input type="radio" id="five-plus" name="prog-exp" value="5+" required/>
           <label for="over">5+</label>
         </fieldset>
 
+        <br />
+
         <fieldset>
           <legend>Favourite Genres of Media</legend>
+
+          <!--
+            For checkboxes, the name attribute must be the same
+            for all options in the same group.
+
+            The values must be different for each option so that
+            the data from the user can be properly taken in.
+          -->
           <input type="checkbox" id="sci-fi" name="genre" value="sci-fi" />
           <label for="sci-fi">Sci-Fi</label>
+          <br />
           <input type="checkbox" id="fantasy" name="genre" value="fantasy" />
           <label for="fantasy">Fantasy</label>
+          <br />
           <input type="checkbox" id="mystery" name="genre" value="mystery" />
           <label for="mystery">Mystery</label>
+          <br/>
           <input type="checkbox" id="horror" name="genre" value="horror" />
           <label for="horror">Horror</label>
+          <br/>
           <input type="checkbox" id="non-fiction" name="genre" value="non-fiction" />
           <label for="non-fiction">Non-Fiction</label>
+          <br/>
           <input type="checkbox" id="comedy" name="genre" value="comedy" />
           <label for="comedy">Comedy</label>
+          <br/>
           <input type="checkbox" id="drama" name="genre" value="drama" />
           <label for="drama">Drama</label>
+          <br/>
         </fieldset>
+
+        <br />
+
+        <label for="fav-sport">Choose a Sport From the Dropdown:</label>
+        <br />
+        <br />
+
+        <!--
+          The select tag creates a dropdown menu input.
+
+          Necessary attributes include:
+            id, which gives the input an unique identifier inside the form.
+            name, which gives a variable for how to store this information.
+        -->
+        <select id="fav-sport" name="sport" required>
+          <!--
+            The option tag creates one of the options inside the
+            dropdown menu.
+
+            Necessary attributes include:
+              value, which gives an internal value that will be
+              sent to the back-end or displayed in the search
+              bar when this option is selected.
+          -->
+          <option value="americanFootball">American Football</option>
+          <option value="baseball">Baseball</option>
+          <option value="basketball">Basketball</option>
+          <option value="cricket">Cricket</option>
+          <option value="football">Football</option>
+          <option value="hockey">Hockey</option>
+          <option value="rugby">Rugby</option>
+        </select>
       </fieldset>
+
+      <br />
+
+      <label for="added-comments">Additional Comments:</label>
+      <br />
+      <!--
+        The textarea tag creates a larger textbox input for users to
+        type full sentences in.
+        
+        Necessary attributes include:
+          id, which gives the input an unique identifier inside the form.
+          name, which gives a variable for how to store this information.
+          rows, which defines how many rows tall the textbox is.
+          cols, which defines how many columns wide the textbox is.
+      -->
+      <textarea id="added-comments" name="comments" rows="10" cols="50"></textarea>
+
+      <br />
+      <br />
+
+      <!--
+        The submit input creates a button that allows the user
+        to enter the form.
+
+        Necessary attributes include:
+          type, which defines what kind of input it is.
+            For a submit button, the value must be "submit".
+          id, which gives the input an unique identifier inside the form.
+          name, which gives a variable for how to store this information.
+          value, which defines what text is displayed on the button.
+      -->
+      <input type="submit" id="submit-button" name="submit" value="Submit Form" />
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <!--
+        The reset input creates a button that allows the user
+        to clear everything in the form.
+
+        Necessary attributes include:
+          type, which defines what kind of input it is.
+            For a reset button, the value must be "reset".
+          id, which gives the input an unique identifier inside the form.
+          name, which gives a variable for how to store this information.
+          value, which defines what text is displayed on the button.
+      -->
+      <input type="reset" id="reset-button" name="reset" value="Reset Form" />
     </form>
 </body>
 </html>
