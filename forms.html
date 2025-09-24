@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First Website - Form</title>
-</head>
-<body>
+  </head>
+  <body>
+    
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="images-and-iframes.html">Images & IFrames</a>
+      </li>
+      <li>
+        <a href="lists-and-tables.html">Lists & Tables</a>
+      </li>
+      <li>
+        <a href="forms.html">HTML Forms</a>
+      </li>
+    </ul>
+
     <h1>My First Website</h1>
 
     <h2>A Website to Practice HTML</h2>
@@ -13,8 +29,8 @@
     <h3>HTML Forms</h3>
 
     <p>
-      NOTE: This is a school project. DO NOT put any private information
-      in this form!
+      NOTE: This is a school project. DO NOT put any private information in this
+      form!
     </p>
 
     <!--
@@ -84,9 +100,9 @@
         <br />
         <br />
 
-
         <label for="telephone">Phone Number (ex. 1-555-808-7878):</label>
         <input type="tel" id="telephone" name="telNum" required />
+      
       </fieldset>
 
       <br />
@@ -103,7 +119,7 @@
         <label for="password">Password: </label>
         <input type="password" id="password" name="pwd" required />
 
-        <br/>
+        <br />
         <br />
 
         <label for="skill-test">Skill Test, What is 4 x 8?</label>
@@ -126,17 +142,35 @@
             The values must be different for each option so that
             the data from the user can be properly taken in.
           -->
-          <input type="radio" id="zero-to-one" name="prog-exp" value="0-1" required />
+          <input
+            type="radio"
+            id="zero-to-one"
+            name="prog-exp"
+            value="0-1"
+            required
+          />
           <label for="zero-to-one">0-1</label>
 
           <br />
 
-          <input type="radio" id="two-to-four" name="prog-exp" value="2-4" required/>
+          <input
+            type="radio"
+            id="two-to-four"
+            name="prog-exp"
+            value="2-4"
+            required
+          />
           <label for="one">2-4</label>
 
           <br />
 
-          <input type="radio" id="five-plus" name="prog-exp" value="5+" required/>
+          <input
+            type="radio"
+            id="five-plus"
+            name="prog-exp"
+            value="5+"
+            required
+          />
           <label for="over">5+</label>
         </fieldset>
 
@@ -154,31 +188,50 @@
           -->
           <input type="checkbox" id="sci-fi" name="genre" value="sci-fi" />
           <label for="sci-fi">Sci-Fi</label>
+          
           <br />
+
           <input type="checkbox" id="fantasy" name="genre" value="fantasy" />
           <label for="fantasy">Fantasy</label>
+          
           <br />
+
           <input type="checkbox" id="mystery" name="genre" value="mystery" />
           <label for="mystery">Mystery</label>
-          <br/>
+          
+          <br />
+
           <input type="checkbox" id="horror" name="genre" value="horror" />
           <label for="horror">Horror</label>
-          <br/>
-          <input type="checkbox" id="non-fiction" name="genre" value="non-fiction" />
+          
+          <br />
+
+          <input
+            type="checkbox"
+            id="non-fiction"
+            name="genre"
+            value="non-fiction"
+          />
           <label for="non-fiction">Non-Fiction</label>
-          <br/>
+          
+          <br />
+
           <input type="checkbox" id="comedy" name="genre" value="comedy" />
           <label for="comedy">Comedy</label>
-          <br/>
+          
+          <br />
+
           <input type="checkbox" id="drama" name="genre" value="drama" />
           <label for="drama">Drama</label>
-          <br/>
+          
+          <br />
+
         </fieldset>
 
         <br />
 
         <label for="fav-sport">Choose a Sport From the Dropdown:</label>
-        
+
         <br />
         <br />
 
@@ -213,7 +266,9 @@
       <br />
 
       <label for="added-comments">Additional Comments:</label>
+      
       <br />
+      
       <!--
         The textarea tag creates a larger textbox input for users to
         type full sentences in.
@@ -224,7 +279,13 @@
           rows, which defines how many rows tall the textbox is.
           cols, which defines how many columns wide the textbox is.
       -->
-      <textarea id="added-comments" name="comments" rows="10" cols="50"></textarea>
+      <textarea
+        id="added-comments"
+        name="comments"
+        rows="10"
+        cols="50"
+      >
+      </textarea>
 
       <br />
       <br />
@@ -240,7 +301,12 @@
           name, which gives a variable for how to store this information.
           value, which defines what text is displayed on the button.
       -->
-      <input type="submit" id="submit-button" name="submit" value="Submit Form" />
+      <input
+        type="submit"
+        id="submit-button"
+        name="submit"
+        value="Submit Form"
+      />
 
       <br />
       <br />
@@ -261,5 +327,5 @@
       -->
       <input type="reset" id="reset-button" name="reset" value="Reset Form" />
     </form>
-</body>
+  </body>
 </html>
