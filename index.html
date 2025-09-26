@@ -28,86 +28,94 @@
 
   <!-- The body holds all the content that displays on the webpage. -->
   <body>
+    <header>
 
-    <!--
-      This is the best practice for setting up navigation in your website.
-      Use a <ul> with as many <li> tags as you need. 
-      Inside each <li>, put an <a> tag.
-      The href for each <a> tag is just the name of the other files in
-      your project.
-    -->
-    <ul>
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-      <li>
-        <a href="images-and-iframes.html">Images & IFrames</a>
-      </li>
-      <li>
-        <a href="lists-and-tables.html">Lists & Tables</a>
-      </li>
-      <li>
-        <a href="forms.html">HTML Forms</a>
-      </li>
-    </ul>
-    
-    <!-- 
-      h1 is the largest type of heading and is the main 
-      heading for a website.
-
-      It is an example of a block element because it 
-      spans the whole width of the website by default.
-    -->
-    <h1>My First Website</h1>
-    <!-- 
-      h2 is the second level of heading and is what is used
-      for the first subheading of a web page.
-
-      It creates a title for a subsection of a web page.
-    -->
-    <h2>A demo site to learn HTML</h2>
-    
-    <!-- h3 is the second level of subheading in a web page. -->
-    <h3>HTML Text Tags</h3>
-
-    <!-- 
-      br is short for break or break line. It allows developers 
-      to put extra lines of whitespace between their elements.
-    -->
-    <br />
-
-    <!-- 
-      a is short for anchor. It allows us to create links
-      between web pages in our own website, links to external
-      websites, links to email addresses, or links to telephone
-      numbers.
+      <nav>
+        <!--
+          This is the best practice for setting up navigation in your website.
+          Use a <ul> with as many <li> tags as you need. 
+          Inside each <li>, put an <a> tag.
+          The href for each <a> tag is just the name of the other files in
+          your project.
+        -->
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="images-and-iframes.html">Images & IFrames</a>
+          </li>
+          <li>
+            <a href="lists-and-tables.html">Lists & Tables</a>
+          </li>
+          <li>
+            <a href="forms.html">HTML Forms</a>
+          </li>
+        </ul>
+      </nav>
       
-      Necessary attributes include:
-        href, which is the hyperlink reference or link that you
-        are trying to create.
-          href can have a value of a file name in your project,
-          an external web address (starting with http:// or https://),
-          a mailto: followed by an email address, or tel: followed
-          by a telephone number.
-      Useful attributes include:
-        target, which lets you set where in the web browser the
-        link should be opened. E.g., _blank opens the link in a
-        new tab.
-    -->
-    <a href="pembinatrails.edsby.com" target="_blank">Link to Edsby</a>
-    
-    <!-- This will open the default email client on the device. -->
-    <a href="mailto:made-up-person@madeupemail.com">Email Made Up Person!</a>
-    
-    <!-- 
-      This will open the default telephone client on the device. 
-    -->
-    <a href="tel:18888675309">Call Jenny (867-5309)</a>
-    
-    <!-- 
-      This is a paragraph tag. This is used to display
-      full sentences of information on a web page.
-    -->
-    <p>Hello! My name is Mr. Hardman! This is my first website!</p>
+      <!-- 
+        h1 is the largest type of heading and is the main 
+        heading for a website.
+
+        It is an example of a block element because it 
+        spans the whole width of the website by default.
+      -->
+      <h1>My First Website</h1>
+      <!-- 
+        h2 is the second level of heading and is what is used
+        for the first subheading of a web page.
+
+        It creates a title for a subsection of a web page.
+      -->
+      <h2>A demo site to learn HTML</h2>
+    </header>
+
+    <main>
+      <!-- h3 is the second level of subheading in a web page. -->
+      <h3>HTML Text Tags</h3>
+
+      <!-- 
+        br is short for break or break line. It allows developers 
+        to put extra lines of whitespace between their elements.
+      -->
+      <br />
+
+      <section>
+        <!-- 
+          a is short for anchor. It allows us to create links
+          between web pages in our own website, links to external
+          websites, links to email addresses, or links to telephone
+          numbers.
+          
+          Necessary attributes include:
+            href, which is the hyperlink reference or link that you
+            are trying to create.
+              href can have a value of a file name in your project,
+              an external web address (starting with http:// or https://),
+              a mailto: followed by an email address, or tel: followed
+              by a telephone number.
+          Useful attributes include:
+            target, which lets you set where in the web browser the
+            link should be opened. E.g., _blank opens the link in a
+            new tab.
+        -->
+        <a href="pembinatrails.edsby.com" target="_blank">Link to Edsby</a>
+        
+        <!-- This will open the default email client on the device. -->
+        <a href="mailto:made-up-person@madeupemail.com">Email Made Up Person!</a>
+        
+        <!-- 
+          This will open the default telephone client on the device. 
+        -->
+        <a href="tel:18888675309">Call Jenny (867-5309)</a>
+      </section>
+      
+      <!-- 
+        This is a paragraph tag. This is used to display
+        full sentences of information on a web page.
+      -->
+      <p>Hello! My name is Mr. Hardman! This is my first website!</p>
+    </main>
   </body>
 </html>
